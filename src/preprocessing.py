@@ -113,8 +113,10 @@ def impute_sentinel(df: pd.DataFrame, col: str,
                      sentinel_value='MISSING') -> pd.DataFrame:
     """
     Impute missing values with a sentinel value (for categorical / meaningful missingness).
+    Casts column to string first to prevent mixed-type issues with Parquet/Arrow.
     """
     df = df.copy()
+    df[col] = df[col].astype(str).replace({'nan': sentinel_value, '<NA>': sentinel_value, 'None': sentinel_value})
     df[col] = df[col].fillna(sentinel_value)
     return df
 

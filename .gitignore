@@ -28,3 +28,7 @@ Thumbs.db
 *.swp
 *.swo
 *~
+
+# ── Models/ Outputs ────────────────────────────────────
+outputs/saved_models
+outputs/predictions

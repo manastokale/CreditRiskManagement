@@ -49,11 +49,19 @@ Data Loading → EDA → Feature Engineering → Q4 Forecast → Segmentation �
 
 | Model | MAE ($) | RMSE ($) | R² |
 |-------|---------|----------|----|
-| Holt-Winters (baseline) | *Run notebook to see* | — | — |
-| **XGBoost (primary)** | *Run notebook to see* | — | — |
-| LSTM (exploration) | *Run notebook to see* | — | — |
+| Holt-Winters (baseline) | 3,176.43 | 6,291.57 | 0.6125 |
+| **XGBoost (primary)** | **32.15** | **172.22** | **0.9906** |
+| LSTM (exploration) | 298.93 | 1,058.49 | 0.7627 |
 
 > XGBoost with lag features is the primary model. The LSTM demonstrates sequence modeling capability but XGBoost typically outperforms on ~18k accounts.
+
+### Impact Summary
+
+- **Portfolio Current Exposure**: $113.04M
+- **Portfolio Recommended Exposure**: $120.01M
+- **Total Positive Adjustment**: +$7.03M across 10,240 accounts
+- **Total Negative Adjustment**: -$59.88K across 7,208 accounts
+- **Flat Adjustments**: 622 accounts
 
 ### Account Segmentation
 
