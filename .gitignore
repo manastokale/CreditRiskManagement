@@ -1,0 +1,30 @@
+# ── Data files (large CSVs) ──────────────────────────────────
+data/
+
+# ── Virtual environments ─────────────────────────────────────
+venv/
+.venv/
+
+# ── Python bytecode & caches ─────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+
+# ── Jupyter notebook checkpoints ─────────────────────────────
+.ipynb_checkpoints/
+
+# ── OS files ─────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── IDE / editor configs ────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
